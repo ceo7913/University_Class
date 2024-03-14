@@ -135,3 +135,23 @@
     * 관용키 암호화(conventional key encryption)
     * 장점: 구현이 용이하고 실행 속도가 빠름
     * 단점: `키 분배 및 관리가 어려우며`, 인증과 송수신 부인 방지가 보장되지 않음
+    * 예: RC2, RC4, RC5, IDEA, DES(Data Encryption Standard), Triple DES 등
+
+- 공개키 암호화 방식
+    * 암호화 키 != 복호화 키
+    * 비대칭키 암호화(asymmetric key encryption)
+        * 암호화 키(공개키)
+        * 복호화 키(비밀키[개인키])
+    * 장점: 공통 키 암호화 방식의 `키 분배 문제를 해결, 디지털 서명` 기능(부인 봉쇄 가능)
+    * 단점: `구현이 어렵고, 처리 속도가 느림`
+    * 예: RSA(Rivest, Shamir, Adleman)
+
+### 전자서명
+- 공개키 암호화 방식에서의 `개인키`를 이용한 메시지 암호화는 `메시지 작성자만`이 할 수 있으므로 이를 이용하여 `메시지의 작성자 본인을 알리는 서명`을 작성할 수 있음
+- 공개키 기반구조(`PKI: Public Key Infrastructure`)
+- 전자서명의 기본 조건
+    * 서명자 인증(user authentication)
+    * 부인 불가(non-repudiation)
+    * 변경 불가(unalterable)
+    * 재사용 불가(not reusable)
+    * 위조 불가(unforgeable)
