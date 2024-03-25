@@ -77,7 +77,7 @@ np.corrcoef(exdata.math, exdata.physics)
  > score = scan("c:/data/dataintro/score.txt")
  > stem(score)
   The decimal point is 1 digit(s) to the right of the |
-  
+
   1 | 00458
   2 | 1333458889
   3 | 0355789
@@ -89,3 +89,21 @@ np.corrcoef(exdata.math, exdata.physics)
   9 | 09
  ```
 
+### 엑셀 기초활용
+#### 함수 사용
+- 함수 사용 예: if문을 사용하는 예
+```
+통계학 점수가 60점 이상이면 '합격', 60점 미만이면 '불합격' 표시
+주어진 조건을 평가하여 참인 경우와 거짓인 경우에 다른 값을 표시
+
+구문: =IF(주어진 조건, value if true, valus if false)
+* 주어진 조건: 참 또는 거짓으로 판정되는 값이나 식
+* value if true: 주어진 조건이 참일 때 얻게 되는 결과값
+* value if false: 주어진 조건이 거짓일때 얻게 되는 결과값
+```
+- 함수 사용법
+1. D1 셀에 변수명으로 "합격여부(통계학)" 라고 입력하고, D2 셀에 
+    =IF(B2<60, "불합격","합격")라고 입력
+2. 나머지 셀은 채우기 기능을 이용하여 쉽게 처리
+
+- 엑셀을 사용한 데이터 처리 예
