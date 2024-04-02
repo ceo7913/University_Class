@@ -1,30 +1,11 @@
 #include <stdio.h>
-void main(void)
-{
-    int num = 0;
-    int odd_total_num = 0;
-    int even_total_num= 0;
-    printf("1~100 사이의 숫자를 입력하세요 : \n");
-    scanf("%d", &num);
-    if(num <= 100){
-        for(num; num >= 1; num--){
-            if(num % 2 == 1){
-                odd_total_num = odd_total_num + num;
-            }
-            else if(num % 2 == 0){
-                even_total_num = even_total_num + num;
-            }
-        }
-        printf("홀수 값의 총 합계: %d \n", odd_total_num);
-        printf("짝수 값의 총 합계: %d \n", even_total_num);
-    }
-    else{
-        printf("입력값이 100이 넘습니다.");
-    }
-}
 
 int main(void)
 {
+    // 이름과 학번 출력
+    printf("이름: 임준우\n");
+    printf("학번: 202434-363447\n\n");
+
     int num = 0; // 입력 받은 값을 넘겨줄 변수 선언
 
     // 변수 선언 후 0으로 초기화
