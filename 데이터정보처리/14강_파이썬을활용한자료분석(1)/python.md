@@ -44,3 +44,5 @@ pip install tensorflow
 ```
 
 한마디로 필요한 라이브러리 설치 명령어
+
+### spyder
