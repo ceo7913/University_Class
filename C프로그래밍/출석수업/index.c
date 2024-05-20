@@ -38,7 +38,7 @@ int main(void){
         case 10:
         case 9:
         // score 의 값이 10으로 나누었기 때문에 몫이 10인 경우와 몫이 9인경우 동일하게 A학점 처리
-            printf("%d점은 A 학점입니다. \n", score`);
+            printf("%d점은 A 학점입니다. \n", score);
             break; 
         case 8:
             prinf("%d점은 B 학점입니다.\n", score);
